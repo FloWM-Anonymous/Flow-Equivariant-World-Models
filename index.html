@@ -372,7 +372,7 @@
       <div class="col-auto">
         <h2 class="text-center">Model Framework</h2>
           <br>
-      <div style="text-align: center;"><img src='./data/model.png' width="600" alt='missing' /></div>
+      <div style="text-align: center;"><img src='./data/model.png' width="900" alt='missing' /></div>
       </div>
     </div>
 
@@ -392,16 +392,108 @@
         <h2 class="text-center">Results</h2>
       </div>
         <br>
-        <div style="text-align: center;"><img src='./data/vis.png' width="900" alt='missing' /></div>
+
+
+              <p style="font-size:20px; font-weight:bold; text-align:center;">Static Scene Rollout</p>
+
+        <div style="display: flex; justify-content: center; gap: 4px; flex-wrap: wrap; text-align: center;">
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_static/world_view_withcam.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">World View (GT)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_static/agent_view_gt.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">Agent View (GT)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_static/flowm.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_static/flowm_novc.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM (no VC)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_static/flowm_novc_nosme.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM (no VC, no SME)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_static/dfot.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">DFoT</figcaption>
+          </figure>
+        </div>
+
+
+        <br><br><br><br><br><br><br><br><br>
+
+
+        <p style="font-size:20px; font-weight:bold; text-align:center;">Dynamic Scene Partilaly Observable Rollout</p>
+
+        <div style="display: flex; justify-content: center; gap: 4px; flex-wrap: wrap; text-align: center;">
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic/world_view_withcam.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">World View (GT)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic/agent_view_gt.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">Agent View (GT)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic/flowm.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic/flowm_novc.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM (no VC)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic/flowm_novc_nosme.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM (no VC, no SME)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic/dfot.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">DFoT</figcaption>
+          </figure>
+        </div>
+
+
+        <br><br><br><br><br><br><br><br><br>
+
+
+        <p style="font-size:20px; font-weight:bold; text-align:center;">Dynamic Scene Fully Observable Rollout without Self-motion</p>
+
+        <div style="display: flex; justify-content: center; gap: 4px; flex-wrap: wrap; text-align: center;">
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic_fo/world_view_gt.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">World View (GT)*</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic_fo/agent_view_gt.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">Agent View (GT)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic_fo/flowm.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic_fo/flowm_novc.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM (no VC)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic_fo/flowm_novc_nosme.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">FloWM (no VC, no SME)</figcaption>
+          </figure>
+          <figure style="margin: 2px;">
+            <video muted width="145" src="./data/rollout_dynamic_fo/dfot.mp4" autoplay loop></video>
+            <figcaption style="font-size: 12px; min-height: 20px;">DFoT</figcaption>
+          </figure>
+
+        </div>
+        <br>
+        <p style="font-size: 14px; text-align:center; margin-top: 2px;">* For fully observable cases, the World View (GT) is same as Agent View (GT).</p>
+
+
     </div>
-
-
-
-
-
-
-
-
 
 
 
